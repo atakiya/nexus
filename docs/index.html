@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+		<title>Welcome to the Sol NEXUS uplink</title>
+
+		<meta name="description" content="The unofficial official NEXUS uplink in the Sol system."/>
+		<meta name="author" content="Avunia Takiya"/>
+		<meta property="og:title" content="Sol Avali NEXUS uplink"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:description" content="The unofficial official NEXUS uplink in the Sol system."/>
+		<meta property="og:url" content="https://nexus.takiya.eu/"/>
+		<meta property="og:image" content="https://nexus.takiya.eu/avali_logo.png"/>
+
+		<link rel='icon' type='image/png' href='./avali_logo.png'>
+	</head>
+		<style>
+			@font-face {
+				font-family: "Avali Scratch";
+				src: local("Avali Scratch"),
+					url("./fonts/avali-scratch.otf") format("opentype"),
+					url("./fonts/avali-scratch.ttf") format("truetype");
+			}
+
+			:root {
+				--nexus-branding-color: #ff850d;
+				--nexus-font-avali: "Avali Scratch";
+				--nexus-font-latin: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				--nexus-theme-background: #fefefe;
+				--nexus-theme-shadow: rgba(0,0,0,.25);
+			}
+
+			@media (prefers-color-scheme: light) {
+				:root {
+					--nexus-theme-background: #fefefe;
+					--nexus-theme-shadow: rgba(0,0,0,.25);
+				}
+			}
+
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--nexus-theme-background: #111111;
+					--nexus-theme-shadow: rgba(255, 133, 13, .5);
+				}
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			a {
+				color: #4277cc;
+			}
+
+			body {
+				background-color: var(--nexus-theme-background);
+				font-family: var(--nexus-font-latin);
+				height: 100vh;
+				margin: 0;
+			}
+
+			section {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				justify-content: center;
+				
+			}
+
+			#nexus-avali-logo {
+				margin-bottom: 2em;
+			}
+
+			#nexus-avali-logo > img {
+				filter: drop-shadow(0 0 5px var(--nexus-theme-shadow));
+				height: 20em;
+				width: 20em;
+			}
+
+			.text {
+				color: var(--nexus-branding-color);
+				padding: 12px;
+				text-shadow: 0 0 10px var(--nexus-theme-shadow);
+			}
+
+			.font-avali {
+				font-family: var(--nexus-font-avali);
+				font-size: 3em;
+			}
+
+			.font-latin {
+				font-family: var(--nexus-font-latin);
+				font-size: 2em;
+			}
+		</style>
+	<body>
+		<section>
+			<div id="nexus-avali-logo">
+				<img alt="An orange circle with three orange feathers on it." src="./avali_logo.svg"/>
+			</div>
+			<div class="text font-avali" title="(Translated) Work in progress...">Work in progress...</div>
+			<div class="text font-avali">&gt;&gt;&gt;&nbsp;<a href="./lorebook.pdf" title="Avali Lorebook">Avali Lorebook</a>&nbsp;&lt;&lt;&lt;</div>
+		</section>
+	</body>
+</html>
