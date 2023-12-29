@@ -1,4 +1,4 @@
-# Sol's NEXUS Uplink WIP
+# Sol-Nexus Avali Embassy Uplink
 *A current work in progress*
 
 
