@@ -57,17 +57,19 @@
 			body {
 				background-color: var(--nexus-theme-background);
 				font-family: var(--nexus-font-latin);
-				height: 100vh;
+				min-height: 100vh;
 				margin: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 			}
 
 			section {
 				align-items: center;
 				display: flex;
 				flex-direction: column;
-				height: 100%;
 				justify-content: center;
-				
+				flex: 1 0 100%;
 			}
 
 			#nexus-avali-logo {
@@ -95,8 +97,43 @@
 				font-family: var(--nexus-font-latin);
 				font-size: 2em;
 			}
+
+			.nexus-label {
+				display: flex;
+				min-height: 28px;
+				background-color: #303030;
+				padding: 0 0 0 16px;
+				z-index: 100;
+				align-items: stretch;
+			}
+			.nexus-label .content {
+				display: flex;
+				align-items: center;
+			}
+			.nexus-label .content span {
+				font-size: 125%;
+				color: #fff;
+			}
+			.nexus-label .content .flag {
+				width: 24px;
+				height: 16px;
+				margin-right: 8px;
+				background-color: #ff850d;
+				background-image: url('./avali_logo.svg');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: 50%;
+				background-blend-mode: difference;
+			}
 		</style>
 	<body>
+		<div class="nexus-label">
+			<div class="content">
+				<div class="flag">
+				</div>
+				<span class="font-avali" title="(Translated) An official website of the Avali Embassy">An official website of the Avali Embassy</span>
+			</div>
+		</div>
 		<section>
 			<div id="nexus-avali-logo">
 				<img alt="An orange circle with three orange feathers on it." src="./avali_logo.svg"/>
